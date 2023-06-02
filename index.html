@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<html lang="en">
+  <head>
+    <title>Cost Calculator</title>
+   
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <label for="growArea">Grow Area (m<sup>2</sup>):</label>
+    <input type="number" id="growArea" min="0" step="0.01" required />
+    <input type="range" id="growAreaRange" min="0" step="0.01" required />
+
+    <h1>Yearly Output and Revenue</h1>
+    <form id="outputCostCalculator">
+      <label for="totalOutput">Total Output (kg):</label>
+      <input type="number" id="totalOutput" min="0" step="0.01" required />
+      <input type="range" id="totalOutputRange" min="0" step="0.01" required />
+
+      <label for="revenuePerKg">Revenue per kg ($):</label>
+      <input type="number" id="revenuePerKg" min="0" step="0.01" required />
+      <input type="range" id="revenuePerKgRange" min="0" step="0.01" required />
+
+      <label for="percentageInputOutput">Percentage of Turnover:</label>
+      <input
+        type="number"
+        id="percentageInputOutput"
+        min="0"
+        step="0.01"
+        required
+      />
+      <input
+        type="range"
+        id="percentageInputOutputRange"
+        min="0"
+        step="0.01"
+        required
+      />
+
+   
+
+    <div id="outputResults" class="outputResults"></div>
+
+    <h1>Crop Walk Labor Cost</h1>
+    <form id="laborCostCalculator">
+      <label for="hourlyCost">Hourly Cost ($):</label>
+      <input type="number" id="hourlyCost" min="0" step="0.01" required />
+      <input type="range" id="hourlyCostRange" min="0" step="0.01" required />
+
+      <label for="timeSpentWeekly">Time Spent Weekly (hours):</label>
+      <input type="number" id="timeSpentWeekly" min="0" step="0.01" required />
+      <input
+        type="range"
+        id="timeSpentWeeklyRange"
+        min="0"
+        step="0.01"
+        required
+      />
+
+      <label for="daysPerWeek">Days per Week:</label>
+      <input type="number" id="daysPerWeek" min="0" step="1" required />
+      <input type="range" id="daysPerWeekRange" min="0" step="1" required />
+
+      <label for="weeksPerYear">Weeks per Year:</label>
+      <input type="number" id="weeksPerYear" min="0" step="1" required />
+      <input type="range" id="weeksPerYearRange" min="0" step="1" required />
+
+      <label for="percentageInputLabor">Percentage of Yearly Cost:</label>
+      <input
+        type="number"
+        id="percentageInputLabor"
+        min="0"
+        step="0.01"
+        required
+      />
+      <input
+        type="range"
+        id="percentageInputLaborRange"
+        min="0"
+        step="0.01"
+        required
+      />
+
+   
+    </form>
+
+    <div id="laborResults" class="laborResults"></div>
+
+    <div id="totalOpportunity" class="totalOpportunity"></div>
+  </body>
+</html>
